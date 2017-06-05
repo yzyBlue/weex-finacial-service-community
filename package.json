@@ -16,7 +16,7 @@
     "dev": "webpack --watch",
     "copy:android": "cp dist/index.weex.js android/app/src/main/assets/index.js",
     "copy": "npm run copy:android",
-    "serve": "serve -p 1337",
+    "serve": "serve -p 8081",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {

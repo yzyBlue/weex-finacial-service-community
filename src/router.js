@@ -1,5 +1,8 @@
 // import Vue from 'vue'
 import Router from 'vue-router'
+import HomeView from './views/HomeView.vue'
+import NewsView from './views/NewsView.vue'
+import InfoView from './views/InfoView.vue'
 
 Vue.use(Router)
 
@@ -13,17 +16,18 @@ function createStoriesView (type) {
   }
 }
 
-export default new Router({
+let router =  new Router({
   // mode: 'abstract',
+  saveScrollPosition: true,
+  scrollBehavior: () => ({
+    y: 0
+  }),
   routes: [
-    // { path: '/top', component: createStoriesView('top') },
-    // { path: '/new', component: createStoriesView('new') },
-    // { path: '/show', component: createStoriesView('show') },
-    // { path: '/ask', component: createStoriesView('ask') },
-    // { path: '/job', component: createStoriesView('job') },
-    // { path: '/article/:url(.*)?', component: ArticleView },
-    // { path: '/item/:id(\\d+)', component: CommentView },
-    // { path: '/user/:id', component: UserView },
-    // { path: '/', redirect: '/top' }
+    { path: '/home', component: HomeView },
+    { path: '/news', component: NewsView },
+    { path: '/info', component: InfoView },
+    { path: '/', redirect: '/home' }
   ]
 })
+Vue.$router = router
+export default router
