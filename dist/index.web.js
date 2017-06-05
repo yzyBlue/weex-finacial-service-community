@@ -1352,7 +1352,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('image', {
     staticClass: "tab-icon",
     attrs: {
-      "src": "../../images/home.png"
+      "src": "http://localhost:8081/images/home.png"
     }
   }), _vm._v(" "), _c('text', {
     staticClass: "tab-text"
@@ -1371,7 +1371,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('image', {
     staticClass: "tab-icon",
     attrs: {
-      "src": "../../images/internet_news.png"
+      "src": "http://localhost:8081/images/internet_news.png"
     }
   }), _vm._v(" "), _c('text', {
     staticClass: "tab-text"
@@ -1390,7 +1390,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('image', {
     staticClass: "tab-icon",
     attrs: {
-      "src": "../../images/my_info.png"
+      "src": "http://localhost:8081/images/my_info.png"
     }
   }), _vm._v(" "), _c('text', {
     staticClass: "tab-text"

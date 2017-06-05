@@ -2,17 +2,17 @@
     <div class="wrapper">
         <div class="container" @click="jump('/home')">
             <image class="top-line" src=""></image>
-            <image class="tab-icon" src="../../images/home.png"></image>
+            <image class="tab-icon" src="http://localhost:8081/images/home.png"></image>
             <text class="tab-text">首页</text>
         </div>
         <div class="container" @click="jump('/news')">
             <image class="top-line" src=""></image>
-            <image class="tab-icon" src="../../images/internet_news.png"></image>
+            <image class="tab-icon" src="http://localhost:8081/images/internet_news.png"></image>
             <text class="tab-text">动态</text>
         </div>
         <div class="container" @click="jump('/info')">
             <image class="top-line" src=""></image>
-            <image class="tab-icon" src="../../images/my_info.png"></image>
+            <image class="tab-icon" src="http://localhost:8081/images/my_info.png"></image>
             <text class="tab-text">我的</text>
         </div>
     </div>
